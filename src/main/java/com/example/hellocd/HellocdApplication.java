@@ -11,14 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableAutoConfiguration
 public class HellocdApplication {
 
-
 	@RequestMapping("/")
-	String home() {
-		return "Hello World!";
+	public String home() {
+    	return "home"; // Nom du fichier template sans l'extension .html
 	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(HellocdApplication.class, args);
 	}
-
 }
